@@ -1,3 +1,5 @@
+import Info from './Info'
+
 const Footer = () => {
     const konosuba = ['Aqua', 'Kazuma', 'Meguming', 'Darkness']
     return (
@@ -13,6 +15,7 @@ const Footer = () => {
                 ))}
                 etc.
             </div>
+            <Info />
         </>
     )
 }

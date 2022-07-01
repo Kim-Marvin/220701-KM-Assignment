@@ -1,3 +1,4 @@
+import Calculate from './Calculate'
 import Discount from './Discount'
 import VAT from './VAT'
 
@@ -6,6 +7,7 @@ const Body = () => {
     return (
         <>
             <p>This is Body Components.</p>
+            <Calculate />
             {customer ? <Discount /> : <VAT />}
         </>
     )

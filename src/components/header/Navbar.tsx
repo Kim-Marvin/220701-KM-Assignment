@@ -1,3 +1,5 @@
+import Login from './login'
+
 const Navbar = () => {
     let login = true
     login = false
@@ -6,7 +8,13 @@ const Navbar = () => {
             <div>
                 This is Navbar Component. Menu and Search part could be placed
                 here.
-                {login ? <p>You are Logined!</p> : <p>Log In Please!</p>}
+                {login ? (
+                    <p>You are Logined!</p>
+                ) : (
+                    <p>
+                        Log In Please! <Login />
+                    </p>
+                )}
             </div>
         </>
     )
